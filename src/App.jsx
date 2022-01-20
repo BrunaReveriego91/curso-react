@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Tasks from "./componentes/Tasks";
 import "./App.css";
+import AddTask from "./componentes/AddTask";
 
 const App = () => {
   // let message = "Hello world!";
@@ -17,9 +18,17 @@ const App = () => {
     },
   ]);
 
+
+  const handleTaskAddition = (taskTitle) => {
+    const newTasks = [...tasks, {
+      
+    }]
+  }
+
   return (
     <>
       <div className="container">
+        <AddTask />
         <Tasks tasks={tasks} />
       </div>
       ;
